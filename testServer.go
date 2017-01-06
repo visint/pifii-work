@@ -50,7 +50,7 @@ func uploadHandle(w http.ResponseWriter, r *http.Request) {
 // 静态文件处理
 func StaticServer(w http.ResponseWriter, req *http.Request) {
 	fmt.Println("path:" + req.URL.Path)
-	w.Header().Set("Content-type", "text/html")
+//	w.Header().Set("Content-type", "text/html")
 	staticHandler.ServeHTTP(w, req)
 	fmt.Println("get file ok")
 
